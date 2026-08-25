@@ -7,9 +7,8 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
-            url('bg.jpg') no-repeat center center/cover; 
-                url('https://raw.githubusercontent.com/ahmadalmutab292012-coder/rasrca/main/bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('https://cdn.discordapp.com/attachments/1305902517959266344/1541868056429592746/nvdx5fw.png?ex=6a8f2807&is=6a8dd687&hm=29c1f4ad4af594ab3aa46b641a5ffb5f6f33359acb81c5e136ca5bd0d52ab9ea&') no-repeat center center/cover;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
