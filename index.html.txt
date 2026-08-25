@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأكاديمية الذكية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- كارت 1: قوانين -->
+        <a href="#" class="card">
+            <div class="icon-box">📜</div>
+            <div class="content">
+                <h2>قوانين</h2>
+                <p>اللوائح والأجهزة والمخالفات</p>
+            </div>
+            <span class="arrow">&larr;</span>
+        </a>
+
+        <!-- كارت 2: منصة التوظيف -->
+        <a href="#" class="card">
+            <div class="icon-box">💼</div>
+            <div class="content">
+                <h2>منصة التوظيف</h2>
+                <p>فرص لإزدهار شباب المستقبل</p>
+            </div>
+            <span class="arrow">&larr;</span>
+        </a>
+
+        <!-- كارت 3: منصة الدورات -->
+        <a href="#" class="card">
+            <div class="icon-box">🏆</div>
+            <div class="content">
+                <h2>منصة الدورات</h2>
+                <p>فرص العمل والدورات التدريبية</p>
+            </div>
+            <span class="arrow">&larr;</span>
+        </a>
+
+        <!-- كارت 4: فعاليات الهلال الأحمر -->
+        <a href="#" class="card">
+            <div class="icon-box">🎯</div>
+            <div class="content">
+                <h2>فعاليات الهلال الأحمر</h2>
+                <p>المبادرات والمناسبات القادمة</p>
+            </div>
+            <span class="arrow">&larr;</span>
+        </a>
+
+        <!-- كارت 5: نظام المكافآت -->
+        <a href="#" class="card active-card">
+            <div class="icon-box">🎁</div>
+            <div class="content">
+                <h2>نظام المكافآت</h2>
+                <p>آليات التقدير والحوافز</p>
+            </div>
+            <span class="arrow">&larr;</span>
+        </a>
+    </div>
+
+</body>
+</html>
