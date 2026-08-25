@@ -7,9 +7,14 @@
 
 body {
     min-height: 100vh;
-    /* ربط الصورة بالملف المرفوع مع طبقة تظليل سوداء شفافة */
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
-                url('bg.jpg') no-repeat center center/cover;
+                url('https://raw.githubusercontent.com/ahmadalmutab292012-coder/rasrca/main/bg.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
     background-attachment: fixed;
     display: flex;
     justify-content: center;
