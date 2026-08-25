@@ -7,18 +7,136 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
                 url('https://cdn.discordapp.com/attachments/1305902517959266344/1541868056429592746/nvdx5fw.png?ex=6a8f2807&is=6a8dd687&hm=29c1f4ad4af594ab3aa46b641a5ffb5f6f33359acb81c5e136ca5bd0d52ab9ea&') no-repeat center center/cover;
     background-attachment: fixed;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 30px 20px;
+    color: #ffffff;
 }
 
+/* الشعار أعلى اليسار */
+.top-logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.logo-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main-wrapper {
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* قسم الترحيب والأخبار */
+.hero-section {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.main-title {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: #ffffff;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+}
+
+.highlight {
+    color: #ffffff;
+}
+
+.sub-title {
+    font-size: 1.05rem;
+    color: #ffffff;
+    opacity: 0.95;
+    max-width: 650px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* شريط الأخبار الزجاجي العريض */
+.news-bar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.news-badge {
+    background: #ff3b30;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 18px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.red-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ff3b30;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 8px #ff3b30;
+}
+
+.ticker-wrapper {
+    flex-grow: 1;
+    overflow: hidden;
+    text-align: right;
+}
+
+.news-text {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* الكروت */
 .container {
-    width: 90%;
-    max-width: 800px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -30,8 +148,8 @@ body {
     justify-content: space-between;
     padding: 18px 30px;
     text-decoration: none;
-    color: white;
-    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-radius: 20px;
@@ -40,12 +158,12 @@ body {
 }
 
 .card:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.25);
     transform: translateY(-2px);
 }
 
 .card.active-card {
-    background: rgba(180, 40, 50, 0.7);
+    background: rgba(180, 40, 50, 0.75);
 }
 
 .icon-box {
@@ -65,36 +183,20 @@ body {
 }
 
 .content h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 800;
     margin-bottom: 4px;
-    letter-spacing: 0.5px;
+    color: #ffffff;
 }
 
 .content p {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.95rem;
+    color: #ffffff;
     opacity: 0.9;
 }
 
 .arrow {
     font-size: 1.8rem;
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-/* تنسيق الشعار في الأعلى */
-.top-logo {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-}
-
-.logo-img {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
 }
